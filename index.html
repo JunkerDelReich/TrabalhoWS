@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <h1>Farmacia</h1>
+        <form onsubmit="event.preventDefault();">
+            <div>
+                <label for="fnome">Nome</label><br>
+                <input type="text" placeholder="Nome" id="fnome" name="fnome">
+            </div>
+
+            <div>
+                <label for="fcidade">Cidade</label><br>
+                <input type="text" placeholder="Cidade" id="fcidade" name="fcidade">
+            </div>
+
+            <div>
+                <button type="button" onclick="save_f()">
+                    Salvar
+                </button>
+                <button type="button" onclick="clear_f()">
+                    Cancelar
+                </button>
+            </div>
+        </form>
+        <br>
+        <br>
+
+        <table id="myTable_f">
+            <thead>
+                <tr>
+                    <td>
+                        Id
+                    </td>
+                    <td>
+                        Nome
+                    </td>
+                    <td>
+                        Cidade
+                    </td>                   
+                    
+                    <td>
+                        Ações
+                    </td>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+
+        </table>
+    </div>
+
+    <div>
+        <h1>Remédios</h1>
+        <form onsubmit="event.preventDefault();">
+            <div>
+                <label for="rnome">Nome</label><br>
+                <input type="text" placeholder="Nome" id="rnome" name="rnome">
+            </div>
+
+            <div>
+                <label for="rpreco">Preço</label><br>
+                <input type="text" placeholder="0,00" id="rpreco" name="rpreco">
+            </div>
+
+            <div>
+                <label for="rdescricao">Descrição</label><br>
+                <textarea name="rdescricao" id="rdescricao" cols="22" rows="3"></textarea>                
+            </div>
+
+            <div>
+                <label for="rfoto">Foto</label><br>
+                <input type="url" id="rfoto" name="rfoto">
+            </div>
+
+            <div>
+                <button type="button" onclick="save_r()">
+                    Salvar
+                </button>
+                <button type="button" onclick="clear_r()">
+                    Cancelar
+                </button>
+            </div>
+        </form>
+        <br>
+        <br>
+
+        <table id="myTable_r">
+            <thead>
+                <tr>
+                    <td>
+                        Id
+                    </td>
+                    <td>
+                        Nome
+                    </td>
+                    <td>
+                        Preço
+                    </td>
+                    <td>
+                        Descrição
+                    </td>
+                    <td>
+                        Foto
+                    </td>
+                    <td>
+                        Ações
+                    </td>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+
+        </table>
+    </div>
+
+</body>
+
+</html>
